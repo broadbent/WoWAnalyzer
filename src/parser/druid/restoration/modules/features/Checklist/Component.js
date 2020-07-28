@@ -90,6 +90,20 @@ const RestorationDruidChecklist = ({ combatant, castEfficiency, thresholds }) =>
         <AbilityRequirement spell={SPELLS.INNERVATE.id} />
       </Rule>
       <Rule
+        name="Minimise your targeted self healing"
+        description={(
+          <>
+            Target yourself for healing only when your health drops below 10%. Consider using <SpellLink id={SPELLS.ABYSSAL_HEALING_POTION.id} /> during these occasions.
+          </>
+        )}
+      >
+        <Requirement 
+          name="Targeted self healing" 
+          tooltip={"This is your percent of total healing which is intentionally targeted at yourself whilst above 10% health."}
+          thresholds={thresholds.selfHealing} 
+          />
+      </Rule>
+      <Rule
         name={(
           <>
             Keep <SpellLink id={SPELLS.LIFEBLOOM_HOT_HEAL.id} /> and <SpellLink id={SPELLS.EFFLORESCENCE_CAST.id} /> active

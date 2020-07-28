@@ -7,6 +7,7 @@ import PreparationRuleAnalyzer from 'parser/shared/modules/features/Checklist/Pr
 import ManaValues from 'parser/shared/modules/ManaValues';
 
 import AlwaysBeCasting from '../AlwaysBeCasting';
+import SelfHealing from '../SelfHealing';
 import Clearcasting from '../Clearcasting';
 import Lifebloom from '../Lifebloom';
 import Efflorescence from '../Efflorescence';
@@ -25,6 +26,7 @@ class Checklist extends BaseChecklist {
     castEfficiency: CastEfficiency,
     preparationRuleAnalyzer: PreparationRuleAnalyzer,
     alwaysBeCasting: AlwaysBeCasting,
+    selfHealing: SelfHealing,
     wildGrowth: WildGrowth,
     lifebloom: Lifebloom,
     efflorescence: Efflorescence,
@@ -46,6 +48,7 @@ class Checklist extends BaseChecklist {
 
           downtime: this.alwaysBeCasting.downtimeSuggestionThresholds,
           nonHealingTime: this.alwaysBeCasting.nonHealingTimeSuggestionThresholds,
+          selfHealing: this.selfHealing.selfHealingSuggestionThresholds,
           wildGrowthRatio: this.wildGrowth.suggestionThresholds,
           wildGrowthPercentBelowRecommendedCasts: this.wildGrowth.suggestionpercentBelowRecommendedCastsThresholds,
           wildGrowthPercentBelowRecommendedPrecasts: this.wildGrowth.suggestionpercentBelowRecommendedPrecastsThresholds,

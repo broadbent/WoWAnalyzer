@@ -32,6 +32,7 @@ import AbilityTracker from '../shared/modules/AbilityTracker';
 import Haste from '../shared/modules/Haste';
 import StatTracker from '../shared/modules/StatTracker';
 import AlwaysBeCasting from '../shared/modules/AlwaysBeCasting';
+import SelfHealing from '../shared/modules/SelfHealing';
 import Abilities from './modules/Abilities';
 import Buffs from './modules/Buffs';
 import AbilitiesMissing from '../shared/modules/AbilitiesMissing';
@@ -255,6 +256,7 @@ class CombatLogParser {
     haste: Haste,
     statTracker: StatTracker,
     alwaysBeCasting: AlwaysBeCasting,
+    selfHealing: SelfHealing,
     abilities: Abilities,
     buffs: Buffs,
     abilitiesMissing: AbilitiesMissing,

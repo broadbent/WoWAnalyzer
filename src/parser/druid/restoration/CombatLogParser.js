@@ -19,6 +19,7 @@ import RegrowthAttributor from './modules/core/hottracking/RegrowthAttributor';
 import SpellManaCost from './modules/core/SpellManaCost';
 
 import AlwaysBeCasting from './modules/features/AlwaysBeCasting';
+import SelfHealing from './modules/features/SelfHealing';
 import AverageHots from './modules/features/AverageHots';
 import Abilities from './modules/Abilities';
 import CooldownThroughputTracker from './modules/features/CooldownThroughputTracker';
@@ -90,6 +91,7 @@ class CombatLogParser extends CoreCombatLogParser {
     // Features
     lowHealthHealing: LowHealthHealing,
     alwaysBeCasting: AlwaysBeCasting,
+    selfHealing: SelfHealing,
     averageHots: AverageHots,
     cooldownThroughputTracker: CooldownThroughputTracker,
     abilities: Abilities,
