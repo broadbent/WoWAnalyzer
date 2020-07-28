@@ -13,6 +13,7 @@ import BeaconUptime from '../beacons/BeaconUptime';
 import FillerLightOfTheMartyrs from '../FillerLightOfTheMartyrs';
 import FillerFlashOfLight from '../FillerFlashOfLight';
 import Overhealing from '../Overhealing';
+import SelfHealing from '../SelfHealing';
 
 import Component from './Component';
 
@@ -29,6 +30,7 @@ class Checklist extends BaseChecklist {
     manaValues: ManaValues,
     preparationRuleAnalyzer: PreparationRuleAnalyzer,
     overhealing: Overhealing,
+    selfHealing: SelfHealing,
   };
 
   render() {
@@ -44,6 +46,7 @@ class Checklist extends BaseChecklist {
           masteryEffectiveness: this.masteryEffectiveness.suggestionThresholds,
           nonHealingTimeSuggestionThresholds: this.alwaysBeCasting
             .nonHealingTimeSuggestionThresholds,
+          selfHealing: this.selfHealing.selfHealingSuggestionThresholds,
           downtimeSuggestionThresholds: this.alwaysBeCasting.downtimeSuggestionThresholds,
           directBeaconHealing: this.directBeaconHealing.suggestionThresholds,
           beaconUptimeBoL: this.beaconUptime.suggestionThresholdsBoL,

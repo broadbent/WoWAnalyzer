@@ -19,6 +19,7 @@ import BeaconUptime from './modules/beacons/BeaconUptime';
 import PaladinAbilityTracker from './modules/core/PaladinAbilityTracker';
 import CastBehavior from './modules/CastBehavior';
 import Overhealing from './modules/Overhealing';
+import SelfHealing from './modules/SelfHealing';
 import FillerLightOfTheMartyrs from './modules/FillerLightOfTheMartyrs';
 import InefficientLightOfTheMartyrs from './modules/InefficientLightOfTheMartyrs';
 import FillerFlashOfLight from './modules/FillerFlashOfLight';
@@ -96,6 +97,7 @@ class CombatLogParser extends CoreCombatLogParser {
     buffs: Buffs,
     masteryEffectiveness: MasteryEffectiveness,
     alwaysBeCasting: AlwaysBeCasting,
+    selfHealing: SelfHealing,
     cooldownThroughputTracker: CooldownThroughputTracker,
     statValues: StatValues,
 
