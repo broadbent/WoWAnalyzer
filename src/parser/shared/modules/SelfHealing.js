@@ -2,17 +2,10 @@ import { formatPercentage } from 'common/format';
 import Analyzer from 'parser/core/Analyzer';
 
 import Abilities from '../../core/modules/Abilities';
-import GlobalCooldown from './GlobalCooldown';
-import Channeling from './Channeling';
-
-import Haste from './Haste';
 
 class SelfHealing extends Analyzer {
   static dependencies = {
-    haste: Haste,
     abilities: Abilities,
-    globalCooldown: GlobalCooldown, // triggers the globalcooldown event
-    channeling: Channeling, // triggers the channeling-related events
   };
 
   static TARGETED_HEALING_ABILITIES = [
